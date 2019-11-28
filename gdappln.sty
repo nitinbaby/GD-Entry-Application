@@ -1,0 +1,36 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{gdappln}[2014/08/21 GD Entry package]
+\RequirePackage{imakeidx}
+\RequirePackage{fontspec}
+\setmainfont{Times New Roman}
+\RequirePackage{xstring}
+\RequirePackage{xcolor}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{ragged2e}
+\RequirePackage[left=3cm,top=2.0cm,right=1.5cm,bottom=2.7cm]{geometry}
+%---------------------------------------------------------------------
+\newcommand{\toAddress}{The Officer In-charge,\newline Hijli T.O.P, \newline Kharagpur (T) PS}
+%---------------------------------------------------------------------
+\newcommand{\myAddress}{\yname \\ \yroll \\ \org \\ \insti}
+%---------------------------------------------------------------------
+\newcommand{\sdo}[1]{%
+    \IfEqCase{#1}{%
+        {m}{son}%
+        {f}{daughter}%
+        {o}{ward}
+    }[\PackageError{tree}{Undefined option to gender: #1}{}]%
+}%
+\newcommand{\thing}[1]{%
+    \IfEqCase{#1}{%
+        {i}{Institute ID Card}%
+        {m}{medical book}%
+        {p}{passport}
+        {w}{wallet}
+        {mo}{money}
+        {vo}{voter ID card}
+        {ht}{Hall ticket}
+        {atm}{ATM card}
+        {pb}{Bank pass book}
+        {dl}{Driving license}        
+    }[\PackageError{tree}{Undefined option to lost item: #1}{}]%
+}%

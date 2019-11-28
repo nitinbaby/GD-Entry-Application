@@ -1,0 +1,73 @@
+%-------------------------------------------------------------------------------------------------------------
+%GD Entry Application format
+%Writen by B Nitin
+%Process Intensification Labs
+%Cryogenic Engineering Centre
+%Indian Institute of Technology Kharagpur
+%					
+% NOTE: You may share or edit this file as you like, but you SHOULD NOT EDIT/DELETE/SUPPRESS this header
+% This file should be downloaded, used or edited as per the Licence agreement provided with the document.
+% If the user is unable to locate the Licence s/he may obtain it at www.gnu.org/licenses/agpl-3.0.en.html
+%
+%--------------------------------------------------------------------------------------------------------------
+\documentclass[12pt]{article}
+\usepackage{gdappln}
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+\include{preamble}
+\begin{document}
+%---------------------------------------------------------------------
+% 		Removing Page Number
+%---------------------------------------------------------------------
+\thispagestyle{empty}
+%---------------------------------------------------------------------
+% 			To Address
+%---------------------------------------------------------------------
+\flushleft{To\\ \toAddress}
+%---------------------------------------------------------------------
+% 			         Date
+%---------------------------------------------------------------------
+\flushright{\today}
+%\flushright{DD/MM/YYYY}
+%---------------------------------------------------------------------
+% 				Salutation
+%---------------------------------------------------------------------
+\flushleft{Respected Sir,}
+%---------------------------------------------------------------------
+% 				Subject
+%---------------------------------------------------------------------
+\par
+\flushleft{\textbf{Sub:\quad}Lost/Missing of \thing{\lost}}
+%---------------------------------------------------------------------
+% 			Main Content
+%---------------------------------------------------------------------
+\par
+\justify 
+I, \yname, \sdo{\gender} of \fname, student of \dept, \insti, \yroll, resident of \org Hall of Residence would like to inform you that I have lost my \thing{\lost} on \ldate at \ltime hours in the premises of \insti campus. \par \justify So, I request you to make a GDE for necessary action and oblige.
+\flushleft{\quad}
+%---------------------------------------------------------------------
+\vspace{10ex} 
+\newline
+%---------------------------------------------------------------------
+% 			       Thanks
+%---------------------------------------------------------------------
+\centering{Thanking you}
+%---------------------------------------------------------------------
+% 			   Gratitude
+%---------------------------------------------------------------------
+\flushleft{Yours sincerely,}
+%---------------------------------------------------------------------
+% 		          Sign Space
+%---------------------------------------------------------------------
+\vspace{10ex}
+\newline
+%---------------------------------------------------------------------
+% 			  Sign Space
+%---------------------------------------------------------------------
+\myAddress
+%---------------------------------------------------------------------
+\vspace{8ex}
+%---------------------------------------------------------------------
+% 			Sign Space
+%---------------------------------------------------------------------
+\end{document}

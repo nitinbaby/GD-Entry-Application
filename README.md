@@ -25,7 +25,7 @@ The user is expected to edit the preamble.tex file only. Please provide the foll
 \newcommand{\yroll}{Roll number}
 \newcommand{\dept}{Department}
 \newcommand{\org}{Hall}
-\newcommand{\insti}{Indian Institute of Technology Kharapur }
+\newcommand{\insti}{Indian Institute of Technology Kharapur}
 \newcommand{\lost}{argument}
 \newcommand{\ldate}{date of incident}
 \newcommand{\ltime}{Time of incident in 24 hour format}

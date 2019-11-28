@@ -1,9 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{gdappln}[2014/08/21 GD Entry package]
 \RequirePackage{imakeidx}
-\RequirePackage{fontspec}
-\setmainfont{Times New Roman}
 \RequirePackage{xstring}
+\RequirePackage{times}
 \RequirePackage{xcolor}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{ragged2e}
@@ -11,7 +10,7 @@
 %---------------------------------------------------------------------
 \newcommand{\toAddress}{The Officer In-charge,\newline Hijli T.O.P, \newline Kharagpur (T) PS}
 %---------------------------------------------------------------------
-\newcommand{\myAddress}{\yname \\ \yroll \\ \org \\ \insti}
+\newcommand{\myAddress}{\yname \\ \yroll \\ \org \space of Residence\\ \insti}
 %---------------------------------------------------------------------
 \newcommand{\sdo}[1]{%
     \IfEqCase{#1}{%

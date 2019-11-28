@@ -47,11 +47,22 @@ For example, if the user wants to report the missing of atm card, s/he is expect
 \newcommand{\lost}{atm}
 ```
 ## Compiling 
+Compiling instructions for both Linux and Windows systems are given below. It is expected that the user has TeXLive installed on their system (If you compile LateX using TeXStudio or TeXmaker etc., then you already have it installed). If you insist on compiling the code using a third party software of your choice, then you may edit the **preamble.tex** and compile the **application.tex** file.
+
+### Linux
 
 The following code may be used in a Linux terminal to compile the code. The command also deletes the .log and .aux files. Necessary corrections may be made to this command if you wish to retain these files.
 
 ```
 pdflatex application.tex && rm application.aux && rm application.log && rm preamble.aux
 ```
+### Windows
+
+Open a PowerShell window or cmd in the repo folder and type the following command
+```
+pdflatex application.tex
+```
 
 ## Suggestions and criticism are welcome :+1:
+## Cheers !!!!
+tvbnitin@gmail.com
